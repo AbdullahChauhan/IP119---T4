@@ -58,7 +58,7 @@
         z-index: 999;
 
         &-video {
-            width: 925px;
+            width: 60%;
             z-index: 9;
             position: relative;
             box-shadow: 0 1rem 2rem rgba($color-black, 0.25);
@@ -114,7 +114,7 @@
         }
 
         &-desc {
-            width: 450px;
+            width: 35%;
             display: flex;
             flex-direction: column;
             margin-top: auto;
