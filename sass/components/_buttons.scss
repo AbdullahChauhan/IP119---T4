@@ -1,0 +1,81 @@
+.btn {
+    cursor: pointer;
+    padding: $medium $x-large-2;
+    font-size: $font + 0.15;
+    margin-right: $large;
+    background-color: rgba($color-white, 0.1);
+    border-radius: $small;
+
+    .fas {
+        margin-right: $small-2;
+    }
+
+    &:hover {
+        color: $color-black;
+        background-color: $color-gray-light;
+        font-weight: 700;
+        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.25);
+
+        i::before {
+            color: $color-black;
+        }
+    }
+}
+
+.btn__play {
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.btn-play {
+    padding: $small-2;
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 50%;
+    border: 2px solid $color-white;
+    background-color: rgba($color-black, 0.8);
+
+    a {
+        i::before {
+            color: red;
+        }
+    }
+}
+
+.round-btn {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: $medium;
+    background-color: rgba($color-black, .5);
+    font-size: $font - .1;
+    border: 2px solid $color-gray;
+    text-align: center;
+    transition: all 0.25s;
+
+    &:hover {
+        transform: scale(1.1);
+        border: 2px solid $color-white;
+        background-color: $color-black;
+    }
+}
+
+.btn-sound {
+    a {
+        &:last-child {
+            display: none;
+        }
+    }
+
+    &:hover {
+        a {
+            &:first-child {
+                display: none;
+            }
+            &:last-child {
+                display: block;
+            }
+        }
+    }
+}

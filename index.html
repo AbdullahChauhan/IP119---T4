@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>IP119 - T4</title>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+            integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-container__logo-box">
+                    <img src="./images/main-logo.png" alt="Logo" class="logo" />
+                </div>
+                <ul class="nav-container__list">
+                    <li>
+                        <a
+                            href="#"
+                            class="nav-container__list-link"
+                            style="font-weight: 700;"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="nav-container__list-link"
+                            >TV Shows</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="nav-container__list-link">Movies</a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-container__list-link"
+                            >Recently Added</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#" class="nav-container__list-link">My List</a>
+                    </li>
+                </ul>
+                <div class="nav-container__search">
+                    <a href="#" class="nav-container__search-icon"
+                        ><i class="fas fa-search"></i
+                    ></a>
+                    <input
+                        class="nav-container__search-input"
+                        type="search"
+                        name=""
+                        placeholder="Titles, Peoples, Genres"
+                    />
+                </div>
+                <div class="nav-container__profile">
+                    <p class="nav-container__profile-name">Hello</p>
+                </div>
+                <div class="nav-container__notify">
+                    <a href="#" class="nav-container__notify-icon"
+                        ><i class="fas fa-bell"></i
+                    ></a>
+                    <div class="nav-container__notify-options">
+                        <div class="notification__menu">
+                            <div class="notification__menu--1">
+                                <div class="notification__menu--1__img">
+                                    <img
+                                        src="./images/notify-menu-img3.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="notification__menu--1__title">
+                                    <p>Top Pick for You</p>
+                                </div>
+                                <div class="notification__menu--1__name">
+                                    <p>Burn out</p>
+                                </div>
+                                <div class="notification__menu--1__time">
+                                    <p>Today</p>
+                                </div>
+                            </div>
+                            <div class="notification__menu--2">
+                                <div class="notification__menu--2__img">
+                                    <img
+                                        src="./images/notify-menu-img2.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="notification__menu--2__title">
+                                    <p>New Arrival</p>
+                                </div>
+                                <div class="notification__menu--2__name">
+                                    <p>Triple Frontier</p>
+                                </div>
+                                <div class="notification__menu--2__time">
+                                    <p>1 week ago</p>
+                                </div>
+                            </div>
+                            <div class="notification__menu--3">
+                                <div class="notification__menu--3__img">
+                                    <img
+                                        src="./images/notify-menu-img1.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="notification__menu--3__title">
+                                    <p>New Arrival</p>
+                                </div>
+                                <div class="notification__menu--3__name">
+                                    <p>Burn Out</p>
+                                </div>
+                                <div class="notification__menu--3__time">
+                                    <p>5 days ago</p>
+                                </div>
+                            </div>
+                            <div class="notification__menu--4">
+                                <div class="notification__menu--4__img">
+                                    <img
+                                        src="./images/notify-menu-img2.jpg"
+                                        alt=""
+                                    />
+                                </div>
+                                <div class="notification__menu--4__title">
+                                    <p>Top Pick for You</p>
+                                </div>
+                                <div class="notification__menu--4__name">
+                                    <p>Triple Frontier</p>
+                                </div>
+                                <div class="notification__menu--4__time">
+                                    <p>1 week ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-container__account">
+                    <div class="nav-container__account-box">
+                        <div class="nav-container__account-box-options">
+                            <ul
+                                class="nav-container__account-box-options__list-1"
+                            >
+                                <li>
+                                    <a href="#"
+                                        ><img
+                                            src="./images/profile-image-2.png"
+                                            alt=""
+                                        />
+                                        Mike</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><img
+                                            src="./images/profile-image-3.png"
+                                            alt=""
+                                        />
+                                        Johny</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><img
+                                            src="./images/profile-image-4.png"
+                                            alt=""
+                                        />
+                                        Cath</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><img
+                                            src="./images/profile-image-5.png"
+                                            alt=""
+                                        />
+                                        Kids</a
+                                    >
+                                </li>
+                            </ul>
+                            <ul
+                                class="nav-container__account-box-options__list-2"
+                            >
+                                <li><a href="#">Manage Profiles</a></li>
+                                <li><a href="#">Account</a></li>
+                                <li><a href="#">Help Center</a></li>
+                                <li><a href="#">Sign out of Netflix</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header class="header">
+            <div class="bg-video">
+                <video class="bg-video__content" autoplay muted loop>
+                    <source src="./videos/bg-videoHQ.mp4" type="video/mp4" />
+                    Your browser is not supported!
+                </video>
+            </div>
+            <div class="header__fg">
+                <div class="header__fg-title">
+                    <img src="./images/bg-video-title.webp" alt="" />
+                </div>
+                <div class="header__fg-links">
+                    <a class="btn btn__play"
+                        ><i class="fas fa-play"></i> Play</a
+                    >
+                    <a class="btn btn__add-to-list"
+                        ><i class="fas fa-plus"></i> My List</a
+                    >
+                </div>
+                <div class="header__fg-supplemental">
+                    <h2>Watch Season 1 Now</h2>
+                </div>
+                <div class="header__fg-synopsis">
+                    <p>
+                        Solving this crime meant more than just doing their jobs
+                        - - it meant facing mirrors they had all long avoided.
+                    </p>
+                </div>
+            </div>
+            <div class="round-btn header__sound-btn">
+                <a href="#"><i class="fas fa-volume-mute"></i></a>
+                <a href="#"><i class="fas fa-volume-up"></i></a>
+            </div>
+            <div class="header__maturity-rating">
+                16+
+            </div>
+        </header>
+
+        <main>
+            <!-- <div class="shows">
+                <div class="heading-secondary">
+                    Popular on Netflix
+                </div>
+                <div class="popular-shows">
+                    <div class="card popular-shows-card-1">
+                        <img src="./images/popular-show-img1.jpg" alt="" />
+                        <div class="card__hover">
+                            <div class="card__hover-options">
+                                <div class="round-btn btn-play">
+                                    <a class="#"><i class="fas fa-play"></i></a>
+                                </div>
+                                <div class="row-1">Delhi Crime</div>
+                                <div class="row-2">
+                                    <span class="time">New</span
+                                    ><span class="maturity">16+</span
+                                    ><span class="season">Season 1</span>
+                                </div>
+                                <div class="row-3">
+                                    <span class="category">Heist</span
+                                    ><span class="set">TV</span
+                                    ><span class="genre">Action Thriller</span>
+                                </div>
+                                <div class="card__hover-options-btns">
+                                    <div class="round-btn btn-sound">
+                                        <a href="#"
+                                            ><i class="fas fa-volume-mute"></i
+                                        ></a>
+                                        <a href="#"
+                                            ><i class="fas fa-volume-up"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-thumbUp">
+                                        <a href="#"
+                                            ><i class="fas fa-thumbs-up"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-thumpDown">
+                                        <a href="#"
+                                            ><i class="fas fa-thumbs-down"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-add">
+                                        <a class="#"
+                                            ><i class="fas fa-plus"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <video autoplay muted loop>
+                                <source
+                                    src="./videos/show-card-video1.mp4"
+                                    type="video/mp4"
+                                />
+                            </video>
+                        </div>
+                    </div>
+                    <div class="card popular-shows-card-1">
+                        <img src="./images/popular-show-img1.jpg" alt="" />
+                        <div class="card__hover">
+                            <div class="card__hover-options">
+                                <div class="round-btn btn-play">
+                                    <a class="#"><i class="fas fa-play"></i></a>
+                                </div>
+                                <div class="row-1">Delhi Crime</div>
+                                <div class="row-2">
+                                    <span class="time">New</span
+                                    ><span class="maturity">16+</span
+                                    ><span class="season">Season 1</span>
+                                </div>
+                                <div class="row-3">
+                                    <span class="category">Heist</span
+                                    ><span class="set">TV</span
+                                    ><span class="genre">Action Thriller</span>
+                                </div>
+                                <div class="card__hover-options-btns">
+                                    <div class="round-btn btn-sound">
+                                        <a href="#"
+                                            ><i class="fas fa-volume-mute"></i
+                                        ></a>
+                                        <a href="#"
+                                            ><i class="fas fa-volume-up"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-thumbUp">
+                                        <a href="#"
+                                            ><i class="fas fa-thumbs-up"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-thumpDown">
+                                        <a href="#"
+                                            ><i class="fas fa-thumbs-down"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-add">
+                                        <a class="#"
+                                            ><i class="fas fa-plus"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <video autoplay muted loop>
+                                <source
+                                    src="./videos/show-card-video1.mp4"
+                                    type="video/mp4"
+                                />
+                            </video>
+                        </div>
+                    </div>
+                    <div class="card popular-shows-card-1">
+                        <img src="./images/popular-show-img1.jpg" alt="" />
+                        <div class="card__hover">
+                            <div class="card__hover-options">
+                                <div class="round-btn btn-play">
+                                    <a class="#"><i class="fas fa-play"></i></a>
+                                </div>
+                                <div class="row-1">Delhi Crime</div>
+                                <div class="row-2">
+                                    <span class="time">New</span
+                                    ><span class="maturity">16+</span
+                                    ><span class="season">Season 1</span>
+                                </div>
+                                <div class="row-3">
+                                    <span class="category">Heist</span
+                                    ><span class="set">TV</span
+                                    ><span class="genre">Action Thriller</span>
+                                </div>
+                                <div class="card__hover-options-btns">
+                                    <div class="round-btn btn-sound">
+                                        <a href="#"
+                                            ><i class="fas fa-volume-mute"></i
+                                        ></a>
+                                        <a href="#"
+                                            ><i class="fas fa-volume-up"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-thumbUp">
+                                        <a href="#"
+                                            ><i class="fas fa-thumbs-up"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-thumpDown">
+                                        <a href="#"
+                                            ><i class="fas fa-thumbs-down"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-add">
+                                        <a class="#"
+                                            ><i class="fas fa-plus"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <video autoplay muted loop>
+                                <source
+                                    src="./videos/show-card-video1.mp4"
+                                    type="video/mp4"
+                                />
+                            </video>
+                        </div>
+                    </div>
+                    <div class="card popular-shows-card-1">
+                        <img src="./images/popular-show-img1.jpg" alt="" />
+                        <div class="card__hover">
+                            <div class="card__hover-options">
+                                <div class="round-btn btn-play">
+                                    <a class="#"><i class="fas fa-play"></i></a>
+                                </div>
+                                <div class="row-1">Delhi Crime</div>
+                                <div class="row-2">
+                                    <span class="time">New</span
+                                    ><span class="maturity">16+</span
+                                    ><span class="season">Season 1</span>
+                                </div>
+                                <div class="row-3">
+                                    <span class="category">Heist</span
+                                    ><span class="set">TV</span
+                                    ><span class="genre">Action Thriller</span>
+                                </div>
+                                <div class="card__hover-options-btns">
+                                    <div class="round-btn btn-sound">
+                                        <a href="#"
+                                            ><i class="fas fa-volume-mute"></i
+                                        ></a>
+                                        <a href="#"
+                                            ><i class="fas fa-volume-up"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-thumbUp">
+                                        <a href="#"
+                                            ><i class="fas fa-thumbs-up"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-thumpDown">
+                                        <a href="#"
+                                            ><i class="fas fa-thumbs-down"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-add">
+                                        <a class="#"
+                                            ><i class="fas fa-plus"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <video autoplay muted loop>
+                                <source
+                                    src="./videos/show-card-video1.mp4"
+                                    type="video/mp4"
+                                />
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="heading-secondary">
+                    Trending on Netflix
+                </div>
+                <div class="popular-shows">
+                    <div class="card popular-shows-card-1">
+                        <img src="./images/popular-show-img1.jpg" alt="" />
+                        <div class="card__hover">
+                            <div class="card__hover-options">
+                                <div class="round-btn btn-play">
+                                    <a class="#"><i class="fas fa-play"></i></a>
+                                </div>
+                                <div class="row-1">Delhi Crime</div>
+                                <div class="row-2">
+                                    <span class="time">New</span
+                                    ><span class="maturity">16+</span
+                                    ><span class="season">Season 1</span>
+                                </div>
+                                <div class="row-3">
+                                    <span class="category">Heist</span
+                                    ><span class="set">TV</span
+                                    ><span class="genre">Action Thriller</span>
+                                </div>
+                                <div class="card__hover-options-btns">
+                                    <div class="round-btn btn-sound">
+                                        <a href="#"
+                                            ><i class="fas fa-volume-mute"></i
+                                        ></a>
+                                        <a href="#"
+                                            ><i class="fas fa-volume-up"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-thumbUp">
+                                        <a href="#"
+                                            ><i class="fas fa-thumbs-up"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-thumpDown">
+                                        <a href="#"
+                                            ><i class="fas fa-thumbs-down"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-add">
+                                        <a class="#"
+                                            ><i class="fas fa-plus"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <video autoplay muted loop>
+                                <source
+                                    src="./videos/show-card-video1.mp4"
+                                    type="video/mp4"
+                                />
+                            </video>
+                        </div>
+                    </div>
+                    <div class="card popular-shows-card-1">
+                        <img src="./images/popular-show-img1.jpg" alt="" />
+                        <div class="card__hover">
+                            <div class="card__hover-options">
+                                <div class="round-btn btn-play">
+                                    <a class="#"><i class="fas fa-play"></i></a>
+                                </div>
+                                <div class="row-1">Delhi Crime</div>
+                                <div class="row-2">
+                                    <span class="time">New</span
+                                    ><span class="maturity">16+</span
+                                    ><span class="season">Season 1</span>
+                                </div>
+                                <div class="row-3">
+                                    <span class="category">Heist</span
+                                    ><span class="set">TV</span
+                                    ><span class="genre">Action Thriller</span>
+                                </div>
+                                <div class="card__hover-options-btns">
+                                    <div class="round-btn btn-sound">
+                                        <a href="#"
+                                            ><i class="fas fa-volume-mute"></i
+                                        ></a>
+                                        <a href="#"
+                                            ><i class="fas fa-volume-up"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-thumbUp">
+                                        <a href="#"
+                                            ><i class="fas fa-thumbs-up"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-thumpDown">
+                                        <a href="#"
+                                            ><i class="fas fa-thumbs-down"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-add">
+                                        <a class="#"
+                                            ><i class="fas fa-plus"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <video autoplay muted loop>
+                                <source
+                                    src="./videos/show-card-video1.mp4"
+                                    type="video/mp4"
+                                />
+                            </video>
+                        </div>
+                    </div>
+                    <div class="card popular-shows-card-1">
+                        <img src="./images/popular-show-img1.jpg" alt="" />
+                        <div class="card__hover">
+                            <div class="card__hover-options">
+                                <div class="round-btn btn-play">
+                                    <a class="#"><i class="fas fa-play"></i></a>
+                                </div>
+                                <div class="row-1">Delhi Crime</div>
+                                <div class="row-2">
+                                    <span class="time">New</span
+                                    ><span class="maturity">16+</span
+                                    ><span class="season">Season 1</span>
+                                </div>
+                                <div class="row-3">
+                                    <span class="category">Heist</span
+                                    ><span class="set">TV</span
+                                    ><span class="genre">Action Thriller</span>
+                                </div>
+                                <div class="card__hover-options-btns">
+                                    <div class="round-btn btn-sound">
+                                        <a href="#"
+                                            ><i class="fas fa-volume-mute"></i
+                                        ></a>
+                                        <a href="#"
+                                            ><i class="fas fa-volume-up"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-thumbUp">
+                                        <a href="#"
+                                            ><i class="fas fa-thumbs-up"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-thumpDown">
+                                        <a href="#"
+                                            ><i class="fas fa-thumbs-down"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-add">
+                                        <a class="#"
+                                            ><i class="fas fa-plus"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <video autoplay muted loop>
+                                <source
+                                    src="./videos/show-card-video1.mp4"
+                                    type="video/mp4"
+                                />
+                            </video>
+                        </div>
+                    </div>
+                    <div class="card popular-shows-card-1">
+                        <img src="./images/popular-show-img1.jpg" alt="" />
+                        <div class="card__hover">
+                            <div class="card__hover-options">
+                                <div class="round-btn btn-play">
+                                    <a class="#"><i class="fas fa-play"></i></a>
+                                </div>
+                                <div class="row-1">Delhi Crime</div>
+                                <div class="row-2">
+                                    <span class="time">New</span
+                                    ><span class="maturity">16+</span
+                                    ><span class="season">Season 1</span>
+                                </div>
+                                <div class="row-3">
+                                    <span class="category">Heist</span
+                                    ><span class="set">TV</span
+                                    ><span class="genre">Action Thriller</span>
+                                </div>
+                                <div class="card__hover-options-btns">
+                                    <div class="round-btn btn-sound">
+                                        <a href="#"
+                                            ><i class="fas fa-volume-mute"></i
+                                        ></a>
+                                        <a href="#"
+                                            ><i class="fas fa-volume-up"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-thumbUp">
+                                        <a href="#"
+                                            ><i class="fas fa-thumbs-up"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-thumpDown">
+                                        <a href="#"
+                                            ><i class="fas fa-thumbs-down"></i
+                                        ></a>
+                                    </div>
+                                    <div class="round-btn btn-add">
+                                        <a class="#"
+                                            ><i class="fas fa-plus"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <video autoplay muted loop>
+                                <source
+                                    src="./videos/show-card-video1.mp4"
+                                    type="video/mp4"
+                                />
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="section-feature-show">
+                <div class="feature__show">
+                    <div class="feature__show-video">
+                        <img src="./images/feature-show-bg.webp" alt="" />
+                        <video class="video" autoplay muted loop>
+                            <source
+                                src="./videos/bg-videoHQ.mp4"
+                                type="video/mp4"
+                            />
+                            Your browser is not supported!
+                        </video>
+                        <div class="round-btn feature__show-video__sound-btn">
+                            <a href="#"><i class="fas fa-volume-mute"></i></a>
+                            <a href="#"><i class="fas fa-volume-up"></i></a>
+                        </div>
+                        <div class="feature__show-video__maturity-rating">
+                            16+
+                        </div>
+                    </div>
+                    <div class="feature__show feature__show-desc">
+                        <div class="feature__show-title">
+                            <img src="./images/bg-video-title.webp" alt="" />
+                        </div>
+                        <div class="feature__show-links">
+                            <a class="btn btn__play"
+                                ><i class="fas fa-play"></i> Play</a
+                            >
+                            <a class="btn btn__add-to-list"
+                                ><i class="fas fa-plus"></i> My List</a
+                            >
+                        </div>
+                        <div class="feature__show-supplemental">
+                            <h2>Watch Season 1 Now</h2>
+                        </div>
+                        <div class="feature__show-synopsis">
+                            <p>
+                                Solving this crime meant more than just doing
+                                their jobs - - it meant facing mirrors they had
+                                all long avoided.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="col col-1">
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <ul>
+                    <li>Audio and Subtitles</li>
+                    <li>Media Center</li>
+                    <li>Privacy</li>
+                    <li>Contact Us</li>
+                </ul>
+                <div class="service">
+                    <a href="#">Service Code</a>
+                </div>
+                <div class="copyright">
+                    <p style="color: #aaa;">
+                        &copy; 1997-2019 Netflix, Inc. {i-0adfaesfsgfxfdgdg}
+                    </p>
+                </div>
+            </div>
+            <div class="col col-2">
+                <ul>
+                    <li>Audio and Subtitles</li>
+                    <li>Media Center</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
+            <div class="col col-3">
+                <ul>
+                    <li>Audio and Subtitles</li>
+                    <li>Media Center</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
+            <div class="col col-4">
+                <ul>
+                    <li>Audio and Subtitles</li>
+                    <li>Media Center</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+            // Scrolling Effect
+
+            $(window).on("scroll", function() {
+                if ($(window).scrollTop()) {
+                    $("nav").addClass("black");
+                } else {
+                    $("nav").removeClass("black");
+                }
+            });
+        </script>
+    </body>
+</html>

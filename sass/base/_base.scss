@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: $color-white;
+    z-index: 1;
+}
+
+// html {}
+
+body {
+    box-sizing: border-box;
+    background-color: $color-gray-dark-2;
+}

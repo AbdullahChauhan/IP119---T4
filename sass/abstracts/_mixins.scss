@@ -1,0 +1,66 @@
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}
+
+@mixin css-triangle($color, $direction, $size: 6px, $position: absolute, $round: false){
+    @include pseudo($pos: $position);
+    width: 0;
+    height: 0;
+    @if $round {
+        border-radius: 3px;
+    }
+    @if $direction == down {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-top: $size solid $color;
+        margin-top: 0 - round( $size / 2.5 );
+    } @else if $direction == up {
+        border-left: $size solid transparent;
+        border-right: $size solid transparent;
+        border-bottom: $size solid $color;
+        margin-bottom: 0 - round( $size / 2.5 );
+    } @else if $direction == right {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-left: $size solid $color;
+        margin-right: -$size;
+    } @else if  $direction == left {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-right: $size solid $color;
+        margin-left: -$size;
+    }
+}
+
+@mixin notification-submenu-grid {
+    display: grid;
+        grid-template-columns: 150px 218px;
+        grid-template-rows: repeat(3, 20px);
+        padding: $large;
+        border-bottom: 1px solid darken($color-gray, 25%);
+
+        &__img {
+            grid-column: 1 / 2;
+            grid-row: 1 / span 2;
+        }
+
+        &__title,
+        &__name,
+        &__time {
+            grid-column: 2 / 3;
+
+            p {
+                color: $color-gray-light;
+            }
+        }
+
+        &__time {
+            p {
+                color: $color-gray;
+                font-size: $font - 0.2;
+                font-weight: 300;
+            }
+        }
+}
