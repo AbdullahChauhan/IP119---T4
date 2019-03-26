@@ -373,7 +373,7 @@ body {
         position: relative;
         width: 35px;
         height: 35px;
-        background-image: url(../../images/profile-image-1.png);
+        background-image: url("../../images/profile-image-1.png");
         background-size: cover;
         margin-right: 12px; }
         .nav-container__account-box-options {
