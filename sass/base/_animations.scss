@@ -6,3 +6,12 @@
         visibility: hidden;
     }
 }
+
+@keyframes fadeout {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
