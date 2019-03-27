@@ -145,10 +145,10 @@
 
 .section-original-shows {
     width: 100%;
+    height: 600px;
     position: relative;
     display: flex;
-    align-items: center;
-    margin-bottom: $xx-large-2 * 2;
+    margin-bottom: $xx-large;
 
     .handle-left,
     .handle-right {
@@ -184,7 +184,7 @@
             }
             background-color: $color-gray-dark;
             height: 500px;
-            transition: all 0.5s;
+            transition: all 0.5s ease-in-out;
             position: relative;
 
             img {
@@ -202,6 +202,7 @@
                 overflow: hidden;
                 visibility: hidden;
                 transition: all 0.5s;
+
                 .video {
                     width: 100%;
                     height: 100%;
