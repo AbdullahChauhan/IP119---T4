@@ -3,13 +3,12 @@
     height: 90vh;
     // z-index: -999;
     background-color: $color-gray-dark;
-    position: relative;
+    @include relative();
 
     &__fg {
         width: 600px;
-        position: absolute;
-        top: 20%;
-        left: 4%;
+                @include absolute($top: 20%, $left: 4%);
+
 
         &-links {
             display: flex;
@@ -26,9 +25,8 @@
     }
 
     &__sound-btn {
-        position: absolute;
-        bottom: 105px;
-        right: 150px;
+                @include absolute($bottom: 105px, $right: 150px);
+
 
         a {
             &:last-child {
@@ -54,9 +52,8 @@
     &__maturity-rating {
         width: 90px;
         height: 20px;
-        position: absolute;
-        bottom: 100px;
-        right: 0;
+                @include absolute($bottom: 100px, $right: 0);
+
         background-color: rgba($color-white, 0.1);
         padding: $medium-2 $large;
         font-size: $font + 0.25;

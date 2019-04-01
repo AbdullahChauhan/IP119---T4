@@ -1,13 +1,12 @@
 .profiles {
     height: 100vh;
     background-color: $color-gray-dark-2;
-    position: relative;
+    @include relative();
 
     &__logo-box {
         width: 125px;
-        position: absolute;
-        top: 0;
-        left: 50px;
+                @include absolute($top: 0, $left: 50px);
+
 
         .logo {
             width: 100%;
@@ -17,9 +16,8 @@
     }
 
     &__profile-box {
-        position: absolute;
-        top: 50%;
-        left: 50%;
+                @include absolute($top: 50%, $left: 50%);
+
         transform: translate(-50%, -50%);
         text-align: center;
 

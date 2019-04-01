@@ -1,6 +1,6 @@
 .nav {
     width: 100%;
-    position: fixed;
+    @include fixed();
     height: 70px;
     transition: all 1s;
     z-index: 99999;
@@ -87,7 +87,7 @@
         }
 
         &__notify {
-            position: relative;
+            @include relative();
 
             &-icon {
                 margin-right: $large-2;
@@ -95,11 +95,9 @@
             }
 
             &-options {
-                position: absolute;
+                @include absolute($top: 52px, $right: 18px);
                 visibility: hidden;
                 opacity: 0;
-                top: 52px;
-                right: 18px;
                 width: 400px;
                 height: 368px;
                 background-color: rgba($color-black, 0.75);
@@ -125,10 +123,9 @@
         &__account {
             display: flex;
             cursor: pointer;
-            position: relative;
+            @include relative();
 
             &-box {
-                position: relative;
                 width: 35px;
                 height: 35px;
                 margin-right: $medium-2;
@@ -142,15 +139,14 @@
                 &-options {
                     visibility: hidden;
                     opacity: 0;
-                    top: 55px;
-                    left: -110px;
-                    position: absolute;
+                    @include absolute($top: 55px, $left: -110px);
+
                     width: 175px;
                     height: 325px;
                     background-color: $color-black;
                     transition: all 0.25s;
                     border: 1px solid $color-gray-dark;
-                    
+
                     a {
                         &:hover {
                             text-decoration: underline;
